@@ -2,6 +2,189 @@
 <html>
   <body>
     <div id="college_club_list"></div>
-    <script src="main.js"></script>
+    <script>
+      window.college_club_list_data = [
+      {
+        country: 'USA',
+        state: 'AR',
+        college: 'University of Central Arkansas (UCA)',
+        clubName: 'Christian Student Fellowship (CSF)',
+        collegeClubSite: `https://uca.campuslabs.com/engage/organization/christianstudentfellowship`,
+        website: null,
+        facebook: `https://www.facebook.com/CSFUCA`,
+      },
+
+      {
+        country: 'USA',
+        state: 'CA',
+        college: 'Irvine Valley College (IVC)',
+        clubName: 'Christian Students',
+        collegeClubSite: `http://clubs.ivc.edu/pages/christian.aspx`,
+        website: `http://www.irvinechristianstudents.com/`,
+        facebook: `https://www.facebook.com/csatirvine/`,
+      },
+
+      {
+        country: 'USA',
+        state: 'CA',
+        college: 'California Institute of Technology (CAL Tech)',
+        clubName: 'Christians on Campus',
+        collegeClubSite: null,
+        website: null,
+        facebook: `https://www.facebook.com/COCCaltech/`,
+      },
+
+      {
+        country: 'USA',
+        state: 'CA',
+        college: 'California State University (CSULB)',
+        clubName: 'Christians on Campus',
+        collegeClubSite: `https://csulb.campuslabs.com/engage/organization/christians-on-campus`,
+        website: `http://www.csulbchristians.com/`,
+        facebook: `https://www.facebook.com/CSULBChristians/`,
+      },
+
+      {
+        country: 'USA',
+        state: 'CA',
+        college: 'University of California – Berkeley (CAL Berkeley)',
+        clubName: 'Christians on Campus',
+        collegeClubSite: `https://callink.berkeley.edu/organization/christiansoncampus`,
+        website: `https://www.christiansoncampus.info/`,
+        facebook: `https://www.facebook.com/UCB.Christians`,
+      },
+
+      {
+        country: 'USA',
+        state: 'CA',
+        college: 'University of California, Davis (UC Davis)',
+        clubName: 'Christians on Campus',
+        collegeClubSite: `https://aggielife.ucdavis.edu/organization/christians-on-campus-at-uc-davis`,
+        website: `https://cocatucd.com/`,
+        facebook: `https://www.facebook.com/cocatucd`,
+      },
+
+      {
+        country: 'USA',
+        state: 'CA',
+        college: 'University of California, Irvine (UCI)',
+        clubName: 'Christian Students',
+        collegeClubSite: `https://campusorgs.uci.edu/search/searchdetail.php?id=2019000043`,
+        website: `http://www.irvinechristianstudents.com/`,
+        facebook: `https://www.facebook.com/csatirvine/`,
+      },
+
+      {
+        country: 'USA',
+        state: 'CA',
+        college: 'University of California, Riverside (UCR)',
+        clubName: 'Christians on Campus',
+        collegeClubSite: `https://highlanderlink.ucr.edu/organization/christiansoncampus`,
+        website: `http://thechurchinriverside.org/our-community/college-students/`,
+        facebook: `https://www.facebook.com/ChristiansonCampusatUCR/`,
+      },
+
+      {
+        country: 'USA',
+        state: 'OK',
+        college: 'University of Oklahoma (OU)',
+        clubName: 'Christians on Campus',
+        collegeClubSite: `https://orgsync.com/118496/chapter`,
+        website: null,
+        facebook: `https://www.facebook.com/cocoklahoma/`,
+      },
+
+      {
+        country: 'USA',
+        state: 'MA',
+        college: 'University of Massachusetts in Boston (UMB)',
+        clubName: 'Christians on Campus',
+        collegeClubSite: `https://umb.campuslabs.com/engage/organization/christiansoncampus`,
+        website: `https://umbchristiansoncampus.wordpress.com/`,
+        facebook: `https://www.facebook.com/UMBChristians/`,
+      },
+
+      {
+        country: 'USA',
+        state: 'TX',
+        college: 'Rice University',
+        clubName: 'Christians on Campus',
+        collegeClubSite: null,
+        website: `http://christians.rice.edu/`,
+        facebook: `https://www.facebook.com/ChristiansatRice/`,
+      },
+
+      {
+        country: 'USA',
+        state: 'TX',
+        college: 'University of Houston (UH)',
+        clubName: 'Christians at UH',
+        collegeClubSite: null,
+        website: `https://uhchristians.org/`,
+        facebook: `https://www.facebook.com/uhchristians/`,
+      },
+
+      {
+        country: 'USA',
+        state: 'TX',
+        college: 'University of Texas at Austin (UTA)',
+        clubName: 'Christian Students on Campus',
+        collegeClubSite: `https://utexas.campuslabs.com/engage/organization/csoc`,
+        website: `https://www.christianstudentsoncampus.com/`,
+        facebook: `https://www.facebook.com/csoctx`,
+      },
+
+      {
+        country: 'USA',
+        state: 'TX',
+        college: 'University of Texas at Dallas (UTD)',
+        clubName: 'Christian Students on Campus',
+        collegeClubSite: `https://utdallas.presence.io/organization/christian-students-on-campus`,
+        website: `https://www.utdchristians.org/`,
+        facebook: `https://www.utdchristians.org/`,
+      },
+
+      {
+        country: 'USA',
+        state: 'TX',
+        college: 'University of Texas at San Antonio (UTSA)',
+        clubName: 'Christians on Campus',
+        collegeClubSite: `https://utsa.campuslabs.com/engage/organization/christiansoncampus`,
+        website: `https://utsachristians.org/`,
+        facebook: `https://www.facebook.com/utsachristians/`,
+      },
+
+      {
+        country: 'USA',
+        state: 'NC',
+        college: 'Duke University',
+        clubName: 'Christians on Campus',
+        collegeClubSite: `https://sites.duke.edu/christians/`,
+        website: `https://christiansduke.wordpress.com/`,
+        facebook: `https://www.facebook.com/groups/590194121019951/`,
+      },
+
+      {
+        country: 'USA',
+        state: 'NC',
+        college: 'University of North Carolina at Chapel Hill (UNC)',
+        clubName: 'Christians on Campus',
+        collegeClubSite: `https://heellife.unc.edu/organization/christians_on_campus`,
+        website: null,
+        facebook: `https://www.facebook.com/christiansoncampus.unc/`,
+      },
+
+      {
+        country: 'USA',
+        state: 'NC',
+        college: 'North Carolina State University (NCSU)',
+        clubName: 'Christians on Campus',
+        collegeClubSite: `https://getinvolved.ncsu.edu/organization/160`,
+        website: `https://www.ncsucoc.org/`,
+        facebook: null,
+      },
+    ];
+    </script>
+    <script src="main1.js"></script>
   </body>
 </html>
